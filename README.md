@@ -1,6 +1,40 @@
 # sql-repo
 
 Notes from the book SQL Queries for Mere Mortals(SQFMM) and the [dofactory sql tutorial](https://www.dofactory.com/sql/tutorial)
+I will add other sources as I find them.
+
+## Remember
+
+1. Use single quotes, not double quotes.
+ 
+
+
+## Filtering Your Data
+
+###
+
+#### Chapter 6 in SQFMM: Filtering Your Data
+
+##### 
+
+From SQFMM: "Determining whether to use an AND operator to combine conditions is relatively easy and straightforward.
+However, determining whether to use an OR operator can be tricky sometimes. For example, consider the following request:
+
+Show me a list of vendors names and phone numbers for all vendors based in Washington and California."
+
+The author suggests to always stop and think about the request.  In this case, the impulse might be to use an AND 
+(as in Washington AND California) but if you step back and think about it, the condition is really "all vendors based in
+Washingon OR California.  
+
+```
+SELECT VendName, VendPhoneNumber, VendState
+FROM Vendors
+WHERE VendState = 'WA' OR VendState = 'CA'
+```
+
+Remember that WHERE VendState = 'WA' OR 'CA'
+
+is completely invalid
 
 ## Joins
 
