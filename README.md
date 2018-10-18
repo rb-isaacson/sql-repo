@@ -3,6 +3,10 @@
 Notes from the book SQL Queries for Mere Mortals(SQFMM) and the [dofactory sql tutorial](https://www.dofactory.com/sql/tutorial)
 I will add other sources as I find them.
 
+## Tool to Try Out
+
+[Free Universal Database Tool](https://dbeaver.io/docs/features/)
+
 ## Remember
 
 1. Use single quotes, not double quotes.
